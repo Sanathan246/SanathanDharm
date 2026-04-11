@@ -1,5 +1,436 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+    background: linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header h1 {
     font-size: 2.5em;
     color: #140a57;
     margin: 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #140a57;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #1a0d73;
+    transform: scale(1.05);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: linear-gradient(135deg, #140a57 0%, #1f0f7a 100%);
+    color: white;
+    padding: 8rem 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.hero h2 {
+    font-size: 3.5em;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero .subtitle {
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF9933;
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 153, 51, 0.4);
+}
+
+.cta-button:hover {
+    background-color: #e68100;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 153, 51, 0.6);
+}
+
+/* ===== About Section ===== */
+.about {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.about h2 {
+    font-size: 2.8em;
+    color: #140a57;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.1em;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.concepts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.concept-card {
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #FF9933;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.concept-card h3 {
+    color: #140a57;
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+}
+
+.concept-card p {
+    color: #666;
+    margin: 0;
+}
+
+/* ===== Pillars Section ===== */
+.pillars {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+}
+
+.pillars h2 {
+    font-size: 2.8em;
+    color: #140a57;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.pillar {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pillar:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.pillar-number {
+    background: linear-gradient(135deg, #FF9933 0%, #138808 100%);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.pillar h3 {
+    color: #140a57;
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+}
+
+.pillar p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ===== Teachings Section ===== */
+.teachings {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.teachings h2 {
+    font-size: 2.8em;
+    color: #140a57;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.teachings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.teaching-card {
+    background: linear-gradient(135deg, #fff5f0 0%, #f9f9f9 100%);
+    padding: 2.5rem;
+    border-radius: 10px;
+    border-top: 4px solid #138808;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.teaching-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-top-color: #FF9933;
+}
+
+.teaching-card h3 {
+    color: #140a57;
+    font-size: 1.6em;
+    margin-bottom: 1rem;
+}
+
+.teaching-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #140a57 0%, #1f0f7a 100%);
+    color: white;
+}
+
+.contact h2 {
+    font-size: 2.8em;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact > .container > p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 153, 51, 0.5);
+    transform: scale(1.02);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #FF9933;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 153, 51, 0.3);
+}
+
+.submit-btn:hover {
+    background-color: #e68100;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 153, 51, 0.5);
+}
+
+.form-message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+.form-message.success {
+    background-color: #138808;
+    color: white;
+    display: block;
+}
+
+.form-message.error {
+    background-color: #d32f2f;
+    color: white;
+    display: block;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #140a57;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.8s ease-in;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .hero .subtitle {
+        font-size: 1.2em;
+    }
+
+    .about h2,
+    .pillars h2,
+    .teachings h2,
+    .contact h2 {
+        font-size: 2em;
+    }
+
+    .concepts,
+    .pillars-grid,
+    .teachings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
 }
