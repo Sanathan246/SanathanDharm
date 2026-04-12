@@ -8,8 +8,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #1a1a1a;
+    background-color: #ffffff;
 }
 
 .container {
@@ -20,9 +20,9 @@ body {
 
 /* ===== Header & Navigation ===== */
 header {
-    background: linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+    background: linear-gradient(135deg, #FF6B35 0%, #F7931E 30%, #ffffff 50%, #22A699 70%, #006D5B 100%);
     padding: 1.5rem 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -66,11 +66,12 @@ nav a:hover {
 
 /* ===== Hero Section ===== */
 .hero {
-    background: linear-gradient(135deg, #140a57 0%, #1f0f7a 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%);
     color: white;
     padding: 8rem 0;
     text-align: center;
     animation: fadeIn 1s ease-in;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
 .hero h2 {
@@ -87,7 +88,7 @@ nav a:hover {
 
 .cta-button {
     display: inline-block;
-    background-color: #FF9933;
+    background-color: #FF6B35;
     color: white;
     padding: 1rem 2.5rem;
     text-decoration: none;
@@ -95,24 +96,24 @@ nav a:hover {
     font-weight: 700;
     font-size: 1.1em;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 153, 51, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
 }
 
 .cta-button:hover {
-    background-color: #e68100;
+    background-color: #E55A2B;
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 153, 51, 0.6);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
 }
 
 /* ===== About Section ===== */
 .about {
     padding: 5rem 0;
-    background-color: white;
+    background-color: #f8fafc;
 }
 
 .about h2 {
     font-size: 2.8em;
-    color: #140a57;
+    color: #1e293b;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -121,7 +122,7 @@ nav a:hover {
     font-size: 1.1em;
     margin-bottom: 1.5rem;
     line-height: 1.8;
-    color: #555;
+    color: #374151;
 }
 
 .concepts {
@@ -132,10 +133,10 @@ nav a:hover {
 }
 
 .concept-card {
-    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
     padding: 2rem;
     border-radius: 10px;
-    border-left: 4px solid #FF9933;
+    border-left: 4px solid #FF6B35;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
@@ -146,25 +147,25 @@ nav a:hover {
 }
 
 .concept-card h3 {
-    color: #140a57;
+    color: #1e293b;
     margin-bottom: 1rem;
     font-size: 1.5em;
 }
 
 .concept-card p {
-    color: #666;
+    color: #475569;
     margin: 0;
 }
 
 /* ===== Pillars Section ===== */
 .pillars {
     padding: 5rem 0;
-    background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
 .pillars h2 {
     font-size: 2.8em;
-    color: #140a57;
+    color: #1e293b;
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -183,6 +184,7 @@ nav a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
+    border: 1px solid #e2e8f0;
 }
 
 .pillar:hover {
@@ -191,7 +193,7 @@ nav a:hover {
 }
 
 .pillar-number {
-    background: linear-gradient(135deg, #FF9933 0%, #138808 100%);
+    background: linear-gradient(135deg, #FF6B35 0%, #22A699 100%);
     color: white;
     width: 60px;
     height: 60px;
@@ -202,28 +204,29 @@ nav a:hover {
     font-size: 2em;
     font-weight: bold;
     margin: 0 auto 1rem;
+    box-shadow: 0 4px 10px rgba(255, 107, 53, 0.3);
 }
 
 .pillar h3 {
-    color: #140a57;
+    color: #1e293b;
     font-size: 1.8em;
     margin-bottom: 1rem;
 }
 
 .pillar p {
-    color: #666;
+    color: #475569;
     line-height: 1.7;
 }
 
 /* ===== Teachings Section ===== */
 .teachings {
     padding: 5rem 0;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .teachings h2 {
     font-size: 2.8em;
-    color: #140a57;
+    color: #1e293b;
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -235,10 +238,10 @@ nav a:hover {
 }
 
 .teaching-card {
-    background: linear-gradient(135deg, #fff5f0 0%, #f9f9f9 100%);
+    background: linear-gradient(135deg, #fef7f0 0%, #f8fafc 100%);
     padding: 2.5rem;
     border-radius: 10px;
-    border-top: 4px solid #138808;
+    border-top: 4px solid #22A699;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
@@ -246,24 +249,24 @@ nav a:hover {
 .teaching-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    border-top-color: #FF9933;
+    border-top-color: #FF6B35;
 }
 
 .teaching-card h3 {
-    color: #140a57;
+    color: #1e293b;
     font-size: 1.6em;
     margin-bottom: 1rem;
 }
 
 .teaching-card p {
-    color: #666;
+    color: #475569;
     line-height: 1.7;
 }
 
 /* ===== Contact Section ===== */
 .contact {
     padding: 5rem 0;
-    background: linear-gradient(135deg, #140a57 0%, #1f0f7a 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%);
     color: white;
 }
 
@@ -321,7 +324,7 @@ nav a:hover {
 .submit-btn {
     width: 100%;
     padding: 1rem;
-    background-color: #FF9933;
+    background-color: #FF6B35;
     color: white;
     border: none;
     border-radius: 5px;
@@ -329,13 +332,13 @@ nav a:hover {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 153, 51, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
 }
 
 .submit-btn:hover {
-    background-color: #e68100;
+    background-color: #E55A2B;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 153, 51, 0.5);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);
 }
 
 .form-message {
@@ -361,7 +364,7 @@ nav a:hover {
 
 /* ===== Footer ===== */
 footer {
-    background-color: #140a57;
+    background-color: #1e293b;
     color: white;
     text-align: center;
     padding: 2rem 0;
@@ -433,4 +436,123 @@ section {
     .contact-form {
         padding: 1.5rem;
     }
+}
+
+/* ===== New Interactive Elements ===== */
+.back-to-top {
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    transform: scale(1.1);
+    background: #FF6B35 !important;
+}
+
+.scroll-progress {
+    transition: width 0.3s ease;
+}
+
+.teaching-card.expanded {
+    background: linear-gradient(135deg, #fff0e6 0%, #f0f8f0 100%);
+    border-top-color: #FF9933;
+}
+
+.teaching-card .expanded-content {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    color: #555;
+    font-style: italic;
+}
+
+.modal {
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    animation: slideIn 0.3s ease;
+}
+
+.close-btn {
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #FF6B35;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.particle {
+    animation: float 6s linear infinite;
+}
+
+.search-input {
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    width: 250px;
+    box-shadow: 0 0 10px rgba(20, 10, 87, 0.3);
+}
+
+.search-btn:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle {
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.learn-more-btn {
+    transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 107, 53, 0.4);
+}
+
+/* ===== Dark Theme ===== */
+body.dark-theme {
+    background: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-theme .hero {
+    background: linear-gradient(135deg, #2c1810, #1a1a1a);
+}
+
+body.dark-theme .concept-card,
+body.dark-theme .pillar,
+body.dark-theme .teaching-card {
+    background: #2a2a2a;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-theme nav a {
+    color: #e0e0e0;
+}
+
+body.dark-theme nav a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .modal-content {
+    background: #2a2a2a;
+    color: #e0e0e0;
 }
